@@ -1,0 +1,113 @@
+.story{
+    width: 100%;
+    height: 600px;
+}
+.inner{
+    width: 1300px;
+    margin: 0 auto;
+}
+.story_inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.story_title{
+    width: 291px;
+    height: 324px;
+    /* border: 1px solid #ddd; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 20px;
+    z-index: 10;
+}
+.story_title h2{
+    font-size: var(--title-size);
+    font-weight: 800;
+    /* padding 상 우 하 좌 */
+    padding: 36px 60px 40px 37px;
+}
+.story_title h3{
+    font-size: var(--subTitle-size);
+    font-weight: 700;
+    color: var(--sub1-color);
+    padding: 0 36px;
+}
+.story_title h3 a img{
+    margin-left: 6px;
+}
+.title_bg{
+    width: 178px;
+    height: 198px;
+    background-color: rgba(86, 138, 229, 0.5);
+    border-radius: 20px;
+    position: absolute;
+    left: -20px;
+    top: 110px;
+    z-index: -10;
+    /* overflow: hidden; */
+}
+.item{
+    width: 291px;
+    height: 324px;
+    /* border: 1px solid #ddd; */
+    /* 박스쉐도우 설정하기 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+.item div{
+    width: 291px;
+    height: 324px;
+    
+}
+.item:hover{
+    transform: translateY(-50px);
+}
+.item h3{
+    font-size: var(--subTitle-size);
+    font-weight: 700;
+    color: var(--fontPoint-color);
+    text-align: center;
+    padding: 26px;
+}
+.item b{
+    display: block;
+    text-align: center;
+    font-size: var(--base-size);
+    margin-top: -13px;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+.item p{
+    text-align: center;
+    font-size: var(--base-size);
+    font-weight: 500;
+    line-height: 1.7;
+}
+/* icon */
+.item div i{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+    background: url(../img/icon.png);
+}
+.item .manage{
+    /* background-position: 좌우 상하; */
+    background-position: -18px -235px;
+    width: 56px;
+    height: 54px;
+}
+.item .goal{
+    background-position: -109px -233px;
+    width: 56px;
+    height: 52px;
+}
+.item .service{
+    background-position: -203px -233px;
+    width: 56px;
+    height: 52px;
+}

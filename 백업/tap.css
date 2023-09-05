@@ -1,0 +1,111 @@
+.inner{
+    width: 1300px;
+    margin: auto;
+}
+
+.tab_menu{
+    background-color: #F8F8F8;
+}
+
+.tab_visual{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    align-items: center;
+    grid-column-gap: 42px;
+    grid-row-gap: 50px;
+}
+
+.tab_visual h3{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+video{
+    width: 638px;
+    height: 522px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    object-fit: fill;
+}
+
+.recruit .recruit_wrap,
+.bidding .bidding_wrap,
+.employ .employ_wrap,
+.qna .qna_wrap{
+    width: 291px;
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon_h3:hover{transform: scale(1.2); transition: .5s;}
+
+.rec_icon{
+    display: inline-block;
+    background: url(../img/management.png) no-repeat;
+    width: 79px;
+    height: 79px;
+}
+
+.bid_icon{
+    display: inline-block;
+    background: url(../img/justice-hammer.png) no-repeat;
+    width: 79px;
+    height: 79px;
+}
+
+.emp_icon{
+    display: inline-block;
+    background: url(../img/clarity_employee.png) no-repeat;
+    width: 79px;
+    height: 79px;
+}
+
+.qna_icon{
+    display: inline-block;
+    background: url(../img/user-question.png) no-repeat;
+    width: 79px;
+    height: 79px;
+}
+
+.recruit{
+    width: 289px;
+    height: 236px;
+    background-color: #FFCC87;
+}
+
+.bidding{
+    width: 289px;
+    height: 236px;
+    background-color: #D8EBB1;
+}
+
+.employ{
+    width: 289px;
+    height: 236px;
+    background-color: #EBA3BA;
+}
+
+.qna{
+    width: 289px;
+    height: 236px;
+    background-color: #A0B3DA;
+}
+
+.arrow{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/Group75.png);
+    right: 10%;
+    bottom: 10%;
+}
+
+.arrow:hover{
+    background-position: -21px -24px;
+}

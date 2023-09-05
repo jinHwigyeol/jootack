@@ -1,0 +1,174 @@
+:root{
+    /* size */
+    --title-size:2rem; /* 32px */
+    --subTitle-size:1.75rem; /* 28px */
+    --base-size:1.13rem; /* 18px */
+    --small-size:0.94rem; /* 15px */
+    --list-size:1.25rem; /* 20px */
+
+    /* color */
+    --main-color:#E3ECFB;
+    --point-color:#001D6E;
+    --sub1-color:#405692;
+    --sub2-color:#ABC5F2;
+    --font1-color:#484848;
+    --font2-color:#666666;
+    --fontPoint-color:#568AE5;
+}
+
+body{
+    width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+/* 추가 */
+main{
+    z-index: 0;
+}
+.main_visual .main_img{
+    background: url(../img/Frame10.png) no-repeat;
+    width: 1920px;
+    height: 700px;
+}
+
+.finder{
+    position: relative;
+    width: 838px;
+    margin: auto;
+}
+
+.finder .find_icon{
+    position: absolute;
+    display: inline-block;
+    background: url(../img/icon.png);
+    width: 42px;
+    height: 42px;
+    right: 2%;
+    top: 3%;
+    background-position: -17px -16px;
+}
+
+input[type=text]{
+    padding: 1rem;
+    border: 3px solid var(--point-color);
+    border-radius: 10px;
+    /* padding 1rem 때문에 838px 맞추려면 800px이 되어야 함*/
+    width: 800px;
+}
+
+.quick_menu .quick_icons{
+    border: 3px solid var(--point-color);
+    width: 838px;
+    height: 138px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick_icons li{
+    width: 141px;
+    height: 138px;
+    flex: 1;
+    text-align: center;
+    border-right: 3px solid var(--point-color);
+    /* background: rgb(255,255,255,0.7); */
+}
+
+.quick_icons li:nth-child(1){
+    border-radius: 10px 0 0 10px;
+}
+
+.quick_icons li:nth-child(6){
+    border-right: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.quick_icons li:nth-child(n):hover span{
+    color: var(--fontPoint-color);
+}
+
+.quick_icons li:nth-child(1):hover i{
+    background-position: -126px -105px;
+}
+
+.quick_icons li:nth-child(2):hover i{
+    background-position: -239px -105px;
+}
+
+.quick_icons li:nth-child(3):hover i{
+    background-position: -356px -105px;
+}
+
+.quick_icons li:nth-child(4):hover i{
+    background-position: -465px -105px;
+}
+
+.quick_icons li:nth-child(5):hover i{
+    background-position: -572px -107px;
+}
+
+.quick_icons li:nth-child(6):hover i{
+    background-position: -683px -104px;
+}
+
+.quick_icons li a{
+    display: block;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+
+.quick_icon{
+    display: block;
+    background: url(../img/icon.png);
+    background-position: -126px -13px;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+}
+
+.quick_icon2{
+    display: block;
+    background: url(../img/icon.png);
+    background-position: -239px -13px;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+}
+
+.quick_icon3{
+    display: block;
+    background: url(../img/icon.png);
+    background-position: -356px -13px;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+}
+
+.quick_icon4{
+    display: block;
+    background: url(../img/icon.png);
+    background-position: -465px -13px;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+}
+
+.quick_icon5{
+    display: block;
+    background: url(../img/icon.png);
+    background-position: -572px -15px;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+}
+
+.quick_icon6{
+    display: block;
+    background: url(../img/icon.png);
+    background-position: -683px -12px;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+}

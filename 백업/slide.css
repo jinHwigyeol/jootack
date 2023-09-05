@@ -1,0 +1,94 @@
+.inner{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-size: 16px;}
+a{text-decoration: none;}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+}
+
+.swiper-slide .text_box{
+    position: absolute;
+    top: 16%;
+    left: 8%;
+    width: 320px;
+    height: 191px;
+}
+
+.text_box h2{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: left;
+    display: flex;
+    margin: 0;
+}
+
+.text_box p{
+    display: flex;
+    color: #fff;
+    background-color: rgba(0,29,110,0.75);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 38px 24px;
+    text-align: left;
+    height: 146px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 700px;
+    height: 769.2px;
+    object-fit: cover;
+    margin-left: 375px;
+    margin-right: 225px;
+}
+
+.event_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 135px;
+    height: 49px;
+    font-size: 1.13rem;
+    font-weight: 700;
+    color: #405692;
+    border: 3px solid rgba(0,29,110,0.75);
+    border-radius: 10px;
+    position: absolute;
+    top: 48%;
+    left: 15%;
+}
+
+.swiper-button-prev{
+    font-size: 0;
+    width: 156px;
+    height: 156px;
+    background: url(../img/prev.png);
+    background-position: -17px;
+}
+
+.swiper-button-next{
+    width: 156px;
+    height: 156px;
+    background: url(../img/next.png);
+    background-position: 17px;
+}
+
+/* 기본 버튼 초기화 */
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 0;
+}

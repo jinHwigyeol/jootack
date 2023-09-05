@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주거복지</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/respon.css">
+</head>
+
+<body>
+  <header>
+    <div class="inner header_inner">
+      <a href="index.html">
+        <div class="logo">
+          <img src="img/main_logo.svg" alt="">
+        </div>
+      </a>
+      <!-- 추가 -->
+      <div class="mobileMenu">
+        <span class="menu_1"></span>
+        <span class="menu_2"></span>
+        <span class="menu_3"></span>
+      </div>
+      <nav>
+
+        <ul class="gnb side_sub_menu">
+          <li><a href="#none">입주정보
+              <div class="gobtn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </a>
+            <ul class="sub_menu">
+              <li><a href="#none">입주</a></li>
+              <li><a href="#none">퇴거</a></li>
+              <li><a href="notice.html">예비입주자</a></li>
+              <li><a href="#none">임대상가모집</a></li>
+              <li><a href="#none">내역조회</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">고객광장
+              <div class="gobtn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </a>
+            <ul class="sub_menu">
+              <li><a href="#none">공단 새소식</a></li>
+              <li><a href="#none">민원</a></li>
+              <li><a href="#none">고충상담센터</a></li>
+              <li><a href="#none">내부공익신고</a></li>
+              <li><a href="#none">청렴포탈</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">사업분야
+              <div class="gobtn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </a>
+            <ul class="sub_menu">
+              <li><a href="#none">주거복지</a></li>
+              <li><a href="#none">임대운영</a></li>
+              <li><a href="#none">주택관리</a></li>
+              <li><a href="#none">시설관리</a></li>
+              <li><a href="#none">공공사업</a></li>
+              <li><a href="#none">유지보수</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">정보공개
+              <div class="gobtn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </a>
+            <ul class="sub_menu">
+              <li><a href="#none">제도안내</a></li>
+              <li><a href="#none">정보공개청구</a></li>
+              <li><a href="#none">자료실</a></li>
+              <li><a href="#none">공공데이터제공</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">열린경영
+              <div class="gobtn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </a>
+            <ul class="sub_menu">
+              <li><a href="#none">경영공시</a></li>
+              <li><a href="#none">윤리경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">결산공고</a></li>
+              <li><a href="#none">사업실명제</a></li>
+              <li><a href="#none">안전경영</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="m_gnb">
+          <li>
+            <a href="#none" class="collapsible">입주정보
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="content-sub">
+              <div class="coi">
+                <ul class="sub">
+                  <li><a href="#none">입주</a></li>
+                  <li><a href="#none">퇴거</a></li>
+                  <li><a href="notice.html">예비입주자</a></li>
+                  <li><a href="#none">임대상가모집</a></li>
+                  <li><a href="#none">내역조회</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#none" class="collapsible">고객광장
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="content-sub">
+              <div class="coi">
+                <ul class="sub">
+                  <li><a href="#none">공단 새소식</a></li>
+                  <li><a href="#none">민원</a></li>
+                  <li><a href="#none">고충상담센터</a></li>
+                  <li><a href="#none">내부공익신고</a></li>
+                  <li><a href="#none">청렴포탈</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#none" class="collapsible">사업분야
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="content-sub">
+              <div class="coi">
+                <ul class="sub">
+                  <li><a href="#gallery">주거복지</a></li>
+                  <li><a href="#none">임대운영</a></li>
+                  <li><a href="#none">주택관리</a></li>
+                  <li><a href="#none">시설관리</a></li>
+                  <li><a href="#none">공공사업</a></li>
+                  <li><a href="#none">유지보수</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#none" class="collapsible">정보공개
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="content-sub">
+              <div class="coi">
+                <ul class="sub">
+                  <li><a href="#none">제도안내</a></li>
+                  <li><a href="#none">정보공개청구</a></li>
+                  <li><a href="#none">자료실</a></li>
+                  <li><a href="#none">공공데이터제공</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#none" class="collapsible">열린경영
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="content-sub">
+              <div class="coi">
+                <ul class="sub">
+                  <li><a href="#none">경영공시</a></li>
+                  <li><a href="#none">윤리경영</a></li>
+                  <li><a href="#none">인권경영</a></li>
+                  <li><a href="#none">사회공헌</a></li>
+                  <li><a href="#none">결산공고</a></li>
+                  <li><a href="#none">사업실명제</a></li>
+                  <li><a href="#none">안전경영</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </nav>
+    </div>
+    <!-- 추가 -->
+    <div class="sub_bg"></div>
+    <script src="js/header.js"></script>
+  </header>
+  <div class="body_wrap">
+    <main>
+      <div class="main_visual">
+        <div class="main_img"></div>
+      </div>
+    </main>
+
+    <section>
+      <div class="inner gallery_inner">
+        <hr class="line_top">
+        <div class="gallery_title">
+          <h2>
+            주거복지 소개
+          </h2>
+          <span><i class="share"></i></span>
+        </div>
+        <div class="gallery_find">
+          <form>
+            <select name="sel_op">
+              <option>제목</option>
+              <option>글쓴이</option>
+              <option>날짜</option>
+            </select>
+            <input type="text" placeholder="검색어를 입력하세요">
+            <i class="finder_icon"></i>
+          </form>
+        </div>
+        <hr class="line_bottom">
+        <div class="gallery_img">
+          <ul class="gallery_list">
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event_01.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      홈 누리 사업
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event_02.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      행복나눔 사업
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event_03.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      주거환경개선 사업
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event_04.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      추석맞이 떡 나눔
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event5.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      자살, 고독사 예방
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event6.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      문화예술공연 유치
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event7.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      저장강박세대 지원
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event8.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      꿈나무 축구단 운영
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img_box">
+                  <img src="img/event9.jpg" alt="">
+                  <div class="text_box">
+                    <strong>
+                      생활안전지킴이 활동
+                    </strong>
+                    <span>
+                      2023.05.30
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page">
+          <a href="#none">
+            <div class="item on">1</div>
+          </a>
+          <a href="#none">
+            <div class="item">2</div>
+          </a>
+          <a href="#none">
+            <div class="item">3</div>
+          </a>
+          <a href="#none">
+            <div class="item">4</div>
+          </a>
+          <a href="#none">
+            <div class="item">5</div>
+          </a>
+          <a href="#none">
+            <div class="item">6</div>
+          </a>
+        </div>
+        <script src="js/gallery.js"></script>
+      </div>
+    </section>
+    <a href="#top">
+      <div id="go_top">
+        <i class="up_icon"></i>
+        <strong>TOP</strong>
+      </div>
+    </a>
+  </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer_wrap">
+          <div class="inner footer_inner">
+              <div class="logo">
+                  <a href="index.html">
+                      <img src="img/main_logo.svg" alt="">
+                  </a>
+              </div>
+              <div class="use">
+              <div class="use_left">
+                  <a href="#none">개인정보처리방침</a> <span>|</span>
+                  <a href="#none">영상정보처리기기</a> <span class="off">|</span> 
+              </div>
+              <div class="use_right">
+                  <a href="#none">이메일수집거부</a> <span>|</span>
+                  <a href="#none">임직원 전용</a>
+              </div>
+              </div>
+              <div class="address">
+                  <p>
+                      대표 : 서종균 (TEL:1670-2727)<br>
+                      경상남도 진주시 사들로 137 (충무공동 225-8) MAIL TO WEBMASTER<br>
+                      COPYRIGHT &copy; KOREA HOUSING MANAGEMENT CO_LTD.ALL RIGHTS RESERVED. 
+                  </p>
+              </div>
+              <div class="web">
+                  <a href="#none">
+                      <img src="img/web.png" alt="">
+                  </a>
+              </div>
+              <div class="social">
+                  <div class="sns">
+                      <a href="#none">
+                          <img src="img/icon_youtube.svg" alt="">
+                      </a>
+                  </div>
+                  <div class="sns">
+                      <a href="#none">
+                          <img src="img/icon_blog.svg" alt="">
+                      </a>
+                  </div>
+                  <div class="sns">
+                      <a href="#none">
+                          <img src="img/icon_facebook.svg" alt="">
+                      </a>
+                  </div>        
+              </div>
+          </div>
+      </div>
+      
+  </footer>
+</body>
+
+</html>

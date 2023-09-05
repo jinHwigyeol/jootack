@@ -1,0 +1,77 @@
+footer{
+    width: 100%;
+    height: 270px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+.inner{
+    width: 1300px;
+    margin: 0 auto;
+}
+/* grid로 영역분배 */
+.footer_inner{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-areas:
+    "logo web"
+    "use web"
+    "address social";
+}
+.logo {grid-area: logo;}
+.use {
+  grid-area: use;
+  margin: 1rem 0;
+  font-size: var(--small-size);
+  font-weight: 700;
+}
+.use a{
+  /* position: relative; */
+  color: #1a1a1a;
+}
+.use span{
+  color: #1a1a1a;
+  display: inline-block;
+}
+/* .use a::before{
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #1a1a1a;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+.use a:hover{color: var(--fontPoint-color);}
+.address {
+  grid-area: address;
+  font-size: 0.88rem;
+}
+.web{grid-area: web;}
+.web a{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social{
+  grid-area: social;
+  display: flex;
+  justify-content: space-around;
+}
+.social .sns{
+  width: 57px;
+  height: 57px;
+  border-radius: 100%;
+  position: relative;
+}
+.social .sns a img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  filter: invert(100%);
+}
+.social .sns:nth-child(1){background-color: #EE4444;}
+.social .sns:nth-child(2){background-color: #23AA36;}
+.social .sns:nth-child(3){background-color: #3A589E;}

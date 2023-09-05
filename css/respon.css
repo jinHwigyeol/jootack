@@ -1,0 +1,305 @@
+@media(max-width:768px) {
+  .inner {
+    width: 90%;
+    margin: auto;
+  }
+
+  .body_wrap {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    overflow: visible;
+    z-index: 100;
+    border-bottom: 2px solid #C2C2C2;
+  }
+
+  .header_inner {
+    width: 90%;
+    height: 100%;
+    display: block;
+  }
+
+
+
+  .header_inner a {
+    display: inline-block;
+    height: 100%;
+  }
+
+
+  .logo {
+    float: left;
+  }
+
+  /* 햄버거버튼 구현 */
+  .mobileMenu {
+    float: right;
+    width: 30px;
+    height: 35px;
+    padding: 38px 0;
+    cursor: pointer;
+    display: block;
+  }
+
+  .mobileMenu span {
+    height: 2px;
+    margin-bottom: 7px;
+    background-color: #000000;
+    display: block;
+    float: right;
+    transition: 0.2s;
+  }
+
+  .mobileMenu .menu_1 {
+    width: 28px;
+    height: 3px;
+  }
+
+  .mobileMenu .menu_2 {
+    width: 20px;
+    position: relative;
+    height: 2px;
+  }
+
+  .mobileMenu .menu_2::before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: -7px;
+    top: 0;
+  }
+
+  .mobileMenu .menu_3 {
+    width: 28px;
+    height: 3px;
+  }
+
+  .mobileMenu:hover .menu_1 {
+    width: 100%;
+  }
+
+  .mobileMenu:hover .menu_2 {
+    width: 100%;
+  }
+
+  .mobileMenu:hover .menu_2::before {
+    width: 0;
+    height: 0;
+  }
+
+  .mobileMenu:hover .menu_3 {
+    width: 100%;
+  }
+
+  /* 데탑용 gnb none */
+  nav .gnb {
+    display: none;
+  }
+
+  .mobileMenu.x {
+    padding: 50px 0;
+    /* margin-right: 20px; */
+  }
+
+  .mobileMenu.x span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .mobileMenu.x span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobileMenu.x span:nth-child(3) {
+    bottom: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .mobileMenu.x span {
+    margin-bottom: -3px;
+  }
+
+  .sub_bg {
+    display: none;
+  }
+
+  .m_gnb {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 102px;
+    right: -769px;
+    background-color: white;
+    transition: 0.5s;
+    /* overflow-y: scroll; */
+  }
+
+
+  /* main */
+  main {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_visual {
+    width: 100%;
+  }
+
+  .main_visual .main_img {
+    width: 100%;
+    background: url(../img/mob_gall2.png) no-repeat center center;
+    margin: auto;
+    background-size: contain;
+  }
+
+
+  /* gallery */
+
+  .gallery_title {
+    width: 90%;
+    margin: auto;
+  }
+
+  .gallery_find {
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type=text] {
+    width: 250px;
+  }
+
+  select {
+    width: 70px;
+  }
+
+  .gallery_img {
+    width: 92.5%;
+    margin: auto;
+  }
+
+  .gallery_list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    height: 150%;
+  }
+
+
+  .img_box img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .finder_icon {
+    right: 0;
+    top: 13%;
+  }
+
+  hr {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .line_bottom {
+    margin-top: 0;
+  }
+
+  .line_top {
+    margin-bottom: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  .gallery_title .share {
+    top: 3.5%;
+  }
+
+  .page {
+    margin-top: 5rem;
+  }
+
+  .page .item{
+    display: inline-block;
+    text-align: center;
+    padding: 0.4rem;
+  }
+
+  .body_wrap a {
+    position: relative;
+    display: flex;
+  }
+
+  #go_top.visible {
+    opacity: 1;
+  }
+
+
+  /* footer */
+  footer{
+    width: 100%;
+    height: 180px;
+    margin-top: 2rem;
+  }
+  .footer_wrap{
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .footer_inner {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "use1"
+      "use2"
+      "address";
+  }
+
+  .use {
+    /* padding-right: 200px; */
+    font-size: var(--small-size);
+    display: block;
+    grid-area: auto;
+  }
+
+  .use .use_left {
+    grid-area: use1;
+  }
+
+  .use .use_right {
+    grid-area: use2;
+  }
+
+  .use .off {
+    opacity: 0;
+  }
+
+  .address {
+    font-size: var(--small-size);
+  }
+
+  .footer_inner .logo {
+    display: none;
+  }
+
+  .footer_inner .web {
+    display: none;
+  }
+
+  .footer_inner .social {
+    display: none;
+  }
+}
